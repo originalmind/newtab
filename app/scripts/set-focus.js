@@ -1,3 +1,5 @@
+'use strict';
+
 function focusNewTab() {
     var k = 9;
 
@@ -16,15 +18,15 @@ function focusNewTab() {
     });
 
     if (oEvent.initKeyboardEvent) {
-        oEvent.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, k, k);
+        oEvent.initKeyboardEvent('keydown', true, true, document.defaultView, false, false, false, false, k, k);
     } else {
-        oEvent.initKeyEvent("keydown", true, true, document.defaultView, false, false, false, false, k, 0);
+        oEvent.initKeyEvent('keydown', true, true, document.defaultView, false, false, false, false, k, 0);
     }
 
     oEvent.keyCodeVal = k;
 
     if (oEvent.keyCode !== k) {
-        alert("keyCode mismatch " + oEvent.keyCode + "(" + oEvent.which + ")");
+        console.log('keyCode mismatch ' + oEvent.keyCode + '(' + oEvent.which + ')');
     }
 
     document.dispatchEvent(oEvent);

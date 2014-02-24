@@ -1,6 +1,6 @@
 'use strict';
 
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
 	if (changeInfo.url === 'chrome://newtab/') {
 		
 		chrome.tabs.remove(tabId);
