@@ -1,0 +1,8 @@
+{
+  "name": "New Tab Apps Page",
+  "version": "0.0.0",
+  "dependencies": {
+  	"chrome-platform-analytics": "git://github.com/GoogleChrome/chrome-platform-analytics.git"
+  	},
+  "devDependencies": {}
+}
