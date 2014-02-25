@@ -13,7 +13,7 @@
 
 # CHANGELOG
 
-v0.0.10
+v0.0.28
 * When opening new tab, address bar remains focused so you can commence typing immediately
 
 v0.0.10
