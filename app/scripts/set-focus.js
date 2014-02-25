@@ -1,6 +1,9 @@
 'use strict';
 
 function focusNewTab() {
+
+    console.log('focusNewTab');
+
     var k = 9;
 
     var oEvent = document.createEvent('KeyboardEvent');

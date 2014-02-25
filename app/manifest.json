@@ -1,6 +1,6 @@
 {
     "name": "__MSG_appName__",
-    "version": "0.0.18",
+    "version": "0.0.28",
     "manifest_version": 2,
     "description": "__MSG_appDescription__",
     "icons": {
@@ -10,8 +10,7 @@
     "default_locale": "en",
     "background": {
         "scripts": [
-            "scripts/background.js",
-            "scripts/set-focus.js"
+            "scripts/background.js"
         ],
         "persistent": false
     },
