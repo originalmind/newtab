@@ -1,0 +1,536 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cat_name",
+				"get_cat_name"
+			],
+			[
+				"get_cate",
+				"get_category"
+			],
+			[
+				"alph",
+				"alphaCount"
+			],
+			[
+				"alp",
+				"alphaItems"
+			],
+			[
+				"tax",
+				"taxonomy"
+			],
+			[
+				"Porta",
+				"PortableGitDir"
+			],
+			[
+				"Port",
+				"PortableGitDir"
+			],
+			[
+				"GIT",
+				"GITHUB_ROOT"
+			],
+			[
+				"G",
+				"GIT_ROOT"
+			],
+			[
+				"P",
+				"PORTABLE_GIT_ROOT"
+			],
+			[
+				"page",
+				"pagevars"
+			],
+			[
+				"put",
+				"puts"
+			],
+			[
+				"proce",
+				"processFiles"
+			],
+			[
+				"subject",
+				"subjectCode"
+			],
+			[
+				"depl",
+				"deploy"
+			],
+			[
+				"recy",
+				"recycleApp"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/grunt.sublime-build",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"b",
+				"Build: Build"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/joe/Documents/Admin/proj/chrome extensions/newtab/app/manifest.json",
+		"/D/joe/Documents/Admin/crypto/startup/ssdpc/cpuminer-vert.bat",
+		"/D/joe/Documents/Admin/crypto/conf/cpuminer/scrypt-high-vtc-ecurie.conf",
+		"/D/Joe/Documents/Admin/progs/sublime-text-3/Data/Packages/User/grunt.sublime-build",
+		"/D/joe/Documents/Admin/proj/chrome extensions/newtab/app/scripts/background.js",
+		"/D/Joe/Documents/Admin/proj/chrome extensions/newtab/.gitignore",
+		"/D/joe/Documents/Admin/crypto/startup/ssdpc/cpuminer-vert-incl.bat",
+		"/D/joe/Documents/Admin/crypto/startup/setup.ps1",
+		"/C/Users/Joe/AppData/Local/Temp/_tc/opt/bfgminer/api.c",
+		"/C/Users/Joe/AppData/Local/AirVideoServerHD/Logs/transcoding.log",
+		"/D/joe/Documents/Admin/proj/90scassettes/install.ps1",
+		"/D/joe/Documents/Admin/proj/chrome extensions/newtab/readme.md",
+		"/D/joe/Documents/Admin/om/accounting/work notes/PAYPAL PROCESS",
+		"/D/joe/Documents/Admin/om/accounting/work notes/BAS PROCESS",
+		"/D/joe/Documents/Visual Studio 2012/Projects/OMExpenseImporter/UI/ConsoleClient/bin/Debug/OM-Expense-Importer.log",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/content-taxonomylist.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/content-taxonomylist.php.old",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/content-taxonomy-list.php",
+		"/D/joe/Documents/Scripts/RemoveDeadTracks.js",
+		"/D/joe/Documents/Admin/progs/sublime-text-3/changelog.txt",
+		"/C/Users/Joe/AppData/Roaming/cubby/cubby.log",
+		"/T/Admin/proj/wp themes/bycolor/sftp-config.json",
+		"/T/Admin/proj/wp themes/skinbu/functions.php",
+		"/T/Admin/proj/wp themes/skinbu/include/category_walker.class.php",
+		"/T/Admin/proj/wp themes/skinbu/page-new-patterns.php",
+		"/T/Admin/proj/wp themes/skinbu/home.php",
+		"/T/Admin/proj/wp themes/skinbu/index.php",
+		"/T/Admin/proj/wp themes/skinbu/style.css",
+		"/T/Admin/proj/wp themes/skinbu/sftp-config.json",
+		"/T/Admin/proj/wp themes/skinbu/page-new_patterns.php",
+		"/T/Admin/ssh/id_rsa_dh_jjj",
+		"/C/temp/sublime_sftp_debug.txt",
+		"/T/Admin/proj/wp themes/bycolor/archive.php",
+		"/C/Users/90906166.UWS/My Documents/aasplus Modules.txt",
+		"//w0443/uwsweb/webpages/pwebroot/pweb/ttxml/17214748.xml",
+		"/T/Admin/proj/meeting_peeps/node_modules/hoodie-server/node_modules/multicouch/bin/launch-couchdb-from-app.sh",
+		"/D/uwsweb/webpages/PlatformWeb/Main/Deployment/Manual Setup Scripts/distribute-manual-scripts.bat",
+		"//w0421/SQL Data/uwsconnect/callista/uwsouti_cwis_enr_unit_atmp",
+		"//w0421/SQL Data/uwsconnect/callista/enrolment_incremental/archive/uwsouti_pweb_tute_reg_in_20131129_16162",
+		"//w0421/SQL Data/uwsconnect/callista/uwsouti_pweb_enr_crs_atmp",
+		"//w0421/SQL Data/uwsconnect/callista/uwsouti_pre_enr_unit_atmp",
+		"/T/Admin/.cubbyignore",
+		"//w0442/uwsweb/webpages/pwebrootstaff/pweb/scripts/examtimetable.vbs",
+		"/D/temp/test.vbs",
+		"//w0442/uwsweb/webpages/pwebrootstaff/Lib/Util.Lib.asp",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/sftp-config.json",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/page-80.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/archive.php",
+		"/R/tempfi~1/user/sublime-sftp-browse-1385973804/mapped/var/www/mbc/www/makeupbycolor.com/wp-content/themes/bycolor/archive.php",
+		"/T/Admin/progs/sublime-text-3/Data/Packages/User/SFTP.sublime-settings",
+		"/C/Chocolatey/lib/vcredist2008.9.0.30729.1/tools/chocolateyInstall.ps1",
+		"/C/salt/conf/minion",
+		"/C/salt/var/log/salt/minion",
+		"/T/Admin/progs/start-pycmd.bat",
+		"/T/Admin/progs/scripts/start-pycmd.bat",
+		"/T/Admin/progs/scripts/start-portablegit.bat",
+		"/T/Admin/progs/scripts/set-path-portablegit.ps1",
+		"/T/Admin/progs/scripts/set-path-portablegit.bat",
+		"/T/Admin/progs/scripts/TCSTART/set-path-portablegit.bat",
+		"/T/Admin/progs/scripts/TCSTART/set-path-portablegit.btm",
+		"/C/Users/90906166.UWS/AppData/Local/JPSoft/TCMD.INI",
+		"/D/uwsweb/webpages/PlatformWeb/Main/Deployment/pweb-deploy.ps1",
+		"/C/Users/90906166.UWS/My Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+		"/C/Users/90906166.UWS/AppData/Roaming/TCC/dir-hist.txt",
+		"//ad.uws.edu.au/dfShare/CORPSYS/Corpapps/Ipay/Example Data/XML Transaction Data/XML-transaction-data-example.xml",
+		"/T/Admin/progs/sublime-text-3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/T/Admin/progs/sublime-text-3/Data/Packages/HexViewer/Default (Windows).sublime-keymap",
+		"/D/90906166/Downloads/TT Studs.txt",
+		"/C/Users/Joe/Documents/Admin/progs/sublime-text-3/Data/Packages/User/sftp_servers/om5_joe_home",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-fashion_editor.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-hair_stylist.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-makeup_artist.php",
+		"/C/Users/Joe/AppData/Local/GitHub/PortableGit_0f65d050d0c352fd38a0b25d82ee942deb19ef87/README.portable",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/readme.md",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/package.json",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-theme.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-photographer.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-nail_artist.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/header.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy-nails.php",
+		"/C/Users/Joe/Documents/Admin/proj/wp themes/bycolor/include/taxonomy.php",
+		"/C/Users/Joe/Documents/Admin/progs/start-pycmd.bat",
+		"/C/Users/Joe/AppData/Local/GitHub/PortableGit_0f65d050d0c352fd38a0b25d82ee942deb19ef87/git-cmd.bat",
+		"/C/Users/Joe/AppData/Roaming/PyCmd/history",
+		"/C/Chocolatey/lib/git.install.1.8.4/tools/chocolateyInstall.ps1",
+		"/C/Users/Joe/AppData/Local/GitHub/PortableGit_0f65d050d0c352fd38a0b25d82ee942deb19ef87/git-bash.bat",
+		"/C/Chocolatey/lib/git.install.1.8.4/git.install.ketarin.xml",
+		"/C/Chocolatey/lib/git.install.1.8.4/git.install.1.8.4.nupkg",
+		"/C/Chocolatey/lib/git.1.8.4/tools/chocolateyInstall.ps1",
+		"/C/Users/Joe/Documents/Admin/proj/furk-dir/README.md",
+		"/C/Users/Joe/Documents/Admin/progs/sublime-text-3/Data/Packages/User/SFTP.sublime-settings",
+		"/C/Users/Joe/Documents/Admin/progs/sublime-text-3/Data/Packages/User/sftp_servers/om5_joe",
+		"/C/users/joe/appdata/local/temp/sublime-sftp-browse-1385190418/om5_joe_home/var/www/mbc/www/makeupbycolor.com/wp-content/themes/bycolor/include/taxonomy.php",
+		"/T/Admin/proj/furk-dir/.jshintrc",
+		"/T/Admin/proj/furk-dir/lib/furk-api.js",
+		"/T/Admin/proj/furk-dir/lib/furk-dir.js",
+		"//w0241/UWSWeb/WebPages/ipay/ipay_Approved.asp",
+		"//w0241/UWSWeb/WebPages/IpayExternalInterface/www/web.config",
+		"/C/temp/20132310-ess-backup.sql",
+		"/T/Admin/progs/sublime-text-3/Data/Packages/JSHint Gutter/.jshintrc",
+		"/T/Admin/progs/sublime-text-3/Data/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/D/uwsweb/webpages/PlatformWeb/Main/Data/DB Change Scripts/Summer 2013-14 Updates/SQL Scripts/006_courses_ALTER_PROC_extract_pre_callista.sql",
+		"/D/Oracle/product/11.2.0/client_2_32/network/admin/tnsnames.ora",
+		"/D/uwsweb/IPAY/Main/Source/UWS.Ipay.Library.Tests/bin/Debug/UWS.Ipay.Library.Tests.dll.config",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/install-DEV-ipay-testsite.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/UWS.Ipay.TestSite.build",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/build-ipay-testsite.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/install-UAT-ipay-testsite.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/build-install-UAT-ipay-testsite.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/install-PROD-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-UAT-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/install-DEV-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/install-UAT-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.TestSite/build-install-DEV-ipay-testsite.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-PROD-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-install-UAT-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-install-PROD-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-DEV-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/Clean Install/reinstall-DEV-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/Clean Install/reinstall-UAT-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/Clean Install/install-clean-UAT-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.IpayPayment/build-install-DEV-ipay-payment.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/Clean Install/install-clean-dev-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/install-UAT-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/install-PROD-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/install-dev-ipay-ext-interface.bat",
+		"/D/uwsweb/IPAY/Main/Deployment/Web Deployment/NAnt Scripts/UWS.Ipay.ExtInterface/build-UAT-ipay-ext-interface.bat"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"WW PE",
+			"9/02",
+			"2/09",
+			"ignore",
+			"show_categories",
+			"ul",
+			"date",
+			"17313520",
+			"strUnitFlag",
+			"potential_enroll",
+			"10184992",
+			"sh",
+			"npm",
+			"17313520",
+			"16634086",
+			"17482761",
+			"dur",
+			"<p style=\"text-align: left;\">",
+			"git",
+			"exists",
+			"log",
+			"transaction",
+			"Lips",
+			"lips",
+			"Lips",
+			"lips",
+			"Eye Makeup",
+			"eye_makeup",
+			"Makeups",
+			"Year",
+			"year",
+			"Eye Color",
+			"eye_color",
+			"Photographer",
+			"photographer",
+			"Photographer",
+			"photographer",
+			"Hair Stylist",
+			"hair_stylist",
+			"Fashion Editor",
+			"fashion_editor",
+			"Model",
+			"model",
+			"Photographer",
+			"photographer",
+			"FURK_API_FILES",
+			"\\",
+			"tf",
+			"tf.exe",
+			"pause",
+			"echo off",
+			"echo",
+			"tf.exe",
+			"c:\\uwsweb\\IASP\\Main\\ThirdPartyUtils\\nant\\bin\\NAnt.exe",
+			"uws.ipay.library",
+			"extension",
+			";",
+			"\\(.+?\\)",
+			"if \\(.+?\\)",
+			"constituentEntity",
+			"log",
+			"e:/",
+			"log-bin",
+			"e:/",
+			"e:\\",
+			"examtim",
+			"unit_enroltemp",
+			"adconfig",
+			"generating",
+			"\"",
+			" ",
+			"addtodatabasestr",
+			"redirect",
+			"' ",
+			" '",
+			"|",
+			" | ",
+			"~",
+			"${com.wowza.wms.context.VHostConfigHome}",
+			"\\W,\\W\\WSum : ",
+			"\\W,\\W\\W",
+			"IEA",
+			"sline",
+			"~",
+			"----",
+			"wdeploy",
+			"3_5",
+			"WDeploy_3",
+			"wdeploy",
+			"webdeploy",
+			"|",
+			" ,     ",
+			"|",
+			"deploycommon",
+			"deployServer",
+			"computername",
+			"td",
+			"\"Kim\"",
+			"\" ",
+			"menu text",
+			"Plugin_Name",
+			"1.0.0",
+			"plugin-name"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"kb_show_homepage_categories",
+			"<p>",
+			"Nails",
+			"nails",
+			"Theme",
+			"theme",
+			"Lips",
+			"lips",
+			"Makeup",
+			"Eye Makeup",
+			"eye_makeup",
+			"Year",
+			"year",
+			"Eye Color",
+			"eye_color",
+			"Nail Artist",
+			"nail_artist",
+			"Makeup Artist",
+			"makeup_artist",
+			"Hair Stylist",
+			"hair_stylist",
+			"Fashion Editor",
+			"fashion_editor",
+			"Model",
+			"model",
+			"FURK_API_ENDPOINT_FILES",
+			"/",
+			"d:\\uwsweb\\IASP\\Main\\ThirdPartyUtils\\nant\\bin\\NAnt.exe",
+			",",
+			"",
+			"this",
+			"",
+			"\\t",
+			" '",
+			"'",
+			"', '",
+			"\\n",
+			"E:/Stream",
+			", ",
+			",",
+			"line",
+			"\\n",
+			",",
+			"\\t",
+			",",
+			"\"",
+			"WP_Adzerk",
+			"0.1.0",
+			"wp-adzerk"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 266.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "newtab.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
