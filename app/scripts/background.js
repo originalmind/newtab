@@ -48,5 +48,31 @@ NewTabAppsPage.prototype.AddHandler = function addHandler() {
    });
 }
 
+NewTabAppsPage.prototype.Original = function original() {
+   chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
+      if (changeInfo.url === 'chrome://newtab/') {
+
+         chrome.tabs.remove(tabId, function() {
+            chrome.tabs.create({
+               'url': 'chrome://apps/',
+               'active': true
+            }, function(tab) {
+               chrome.tabs.highlight({
+                  tabs: tab.id
+               })
+            });
+         });
+      }
+   });
+}
+
+NewTabAppsPage.prototype.Init = function() {
+   // Handle requests from tabs
+   chrome.extension.onMessage.addListener(
+      function(request, sender, sendResponse) {});
+}
+
+
 var ntap = new NewTabAppsPage();
-ntap.AddHandler();
+ntap.Init();
+ntap.Original();
