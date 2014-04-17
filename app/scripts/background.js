@@ -2,12 +2,11 @@
 
 function NewTabAppsPage() {
 
-   if (!(this instanceof NewTabAppsPage))
+   if (!(this instanceof NewTabAppsPage)) {
       return new NewTabAppsPage();
+   }
 
    var me = this;
-
-   this.a = 'a';
 
    /**
     * Load the Chrome apps page.
@@ -18,9 +17,7 @@ function NewTabAppsPage() {
          'url': 'chrome://apps/',
          'active': true,
          'highlighted': true
-      }, function(tab) {
-         // chrome.tabs.reload(newTabId);
-      });
+      }, function(tab) {});
    }
 }
 
@@ -51,17 +48,7 @@ NewTabAppsPage.prototype.AddHandler = function addHandler() {
 NewTabAppsPage.prototype.Original = function original() {
    chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
       if (changeInfo.url === 'chrome://newtab/') {
-
-         chrome.tabs.remove(tabId, function() {
-            chrome.tabs.create({
-               'url': 'chrome://apps/',
-               'active': true
-            }, function(tab) {
-               chrome.tabs.highlight({
-                  tabs: tab.id
-               })
-            });
-         });
+         me.loadAppsPage(tabId);
       }
    });
 }
