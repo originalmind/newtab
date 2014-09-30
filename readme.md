@@ -9,14 +9,16 @@
 # TODO
 
 1. Make sure it works with multiple windows
-2. Incorporate analytics
-3. Fix packaging to include icon
-4. Improve icons
+2. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
+Also don't override the tab when the Restore button is present. (post crash)
+3. Incorporate analytics
+4. Fix packaging to include icon
+5. Improve icons
 
 
 # CHANGELOG
 
-v 0.0.77
+v 0.0.??
 * Restricted extension to Chrome 33 and later
 * Reduced required permissions - now requires only tabs and storage (for options)
 * Fixed issue in Chrome 34 which caused address bar text to be unselected.
