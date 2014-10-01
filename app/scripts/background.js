@@ -42,6 +42,7 @@ var NewTabAppsPage = (function() {
             console.log('updated')
             console.log(changeInfo)
             console.log(tab)
+
             if (changeInfo.url !== 'chrome://newtab/') {
                return;
             }

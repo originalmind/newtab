@@ -258,7 +258,7 @@ module.exports = function(grunt) {
         chromeManifest: {
             dist: {
                 options: {
-                    buildnumber: true,
+                    buildnumber: 'both',
                     background: {
                         target: 'scripts/background.js'
                     }
@@ -267,6 +267,21 @@ module.exports = function(grunt) {
                 dest: '<%= yeoman.dist %>'
             }
         },
+        bump: {
+            options: {
+              files: ['package.json', 'app/manifest.json' ],
+              updateConfigs: [],
+              commit: true,
+              commitMessage: 'Release v%VERSION%',
+              commitFiles: ['package.json', 'manifest.json'],
+              createTag: true,
+              tagName: 'v%VERSION%',
+              tagMessage: 'Version %VERSION%',
+              push: true,
+              pushTo: 'upstream',
+              gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+            }
+          },
         compress: {
             dist: {
                 options: {
@@ -281,6 +296,8 @@ module.exports = function(grunt) {
             }
         }
     });
+
+    grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('test', [
         'clean:server',

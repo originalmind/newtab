@@ -9,16 +9,21 @@ Add extension from https://chrome.google.com/webstore/detail/new-tab-apps-page/f
 
 # CHANGELOG
 
-v 0.0.??
+v1.0.0
+
+* Improved load speed of Apps page
 * Restricted extension to Chrome 33 and later
 * Reduced required permissions - now requires only tabs and storage (for options)
 * Fixed issue in Chrome 34 which caused address bar text to be unselected.
 
 v0.0.28
+
 * When opening new tab, address bar remains focused so you can commence typing immediately
 
 v0.0.10
+
 * Initial release
+
 
 **Users can stop reading here**
 

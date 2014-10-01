@@ -3,7 +3,9 @@ temp
 .tmp
 dist
 .sass-cache
+bower_components
 app/bower_components
 test/bower_components
 package
 *.sublime-workspace
+npm-debug.log
