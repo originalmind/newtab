@@ -1,6 +1,10 @@
 {
-  "name": "New Tab Apps Page",
+  "name": "newtab",
+  "description": "New Tab Apps Page: a Google Chrome extension to show the apps page when opening a new tab.",
   "version": "0.0.0",
+  "author": { "name" : "Joe Niland", "email" : "joe@originalmind.com.au" },
+  "license": "MIT",
+  "keywords": ["google chrome extension", "tab"],
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",

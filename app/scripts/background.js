@@ -1,65 +1,63 @@
 'use strict';
 
-function NewTabAppsPage() {
-
-   if (!(this instanceof NewTabAppsPage)) {
-      return new NewTabAppsPage();
-   }
-
-   var me = this;
+/**
+ * NewTabAppsPage
+ * Attach to the tab events and redirect chrome://newtab to chrome://apps
+ */
+var NewTabAppsPage = (function() {
+   function NewTabAppsPage() {
+      if (!(this instanceof NewTabAppsPage)) {
+         return new NewTabAppsPage();
+      }
+   };
 
    /**
     * Load the Chrome apps page.
     */
-   this.loadAppsPage = function loadAppsPage(tabId) {
+   var loadAppsPage = function(tabId) {
       console.log('Loading apps page');
       chrome.tabs.update(tabId, {
          'url': 'chrome://apps/',
          'active': true,
          'highlighted': true
       }, function(tab) {});
-   }
-}
+   };
 
-/**
- * Add tab updated handler.
- */
-NewTabAppsPage.prototype.AddHandler = function addHandler() {
-   chrome.tabs.onUpdated.addListener(function(newTabId, changeInfo) {
-      if (changeInfo.url === 'chrome://newtab/') {
+   /**
+    * Add tab updated handler.
+    */
+   return {
+      // Experimental code
+      AddHandler: function addHandler() {
 
-         // Testing whether waiting for it to be loaded will make a difference with the address bar.
-         if (changeInfo.status === 'loading') { //'complete') {
+         chrome.tabs.onCreated.addListener(function(tab) {
+            console.log('created')
+            console.log(tab);
+            if (tab.url === 'chrome://newtab/') {
+               loadAppsPage(tab.id);
+            }
+         });
+
+         chrome.tabs.onUpdated.addListener(function(newTabId, changeInfo, tab) {
+            console.log('updated')
+            console.log(changeInfo)
+            console.log(tab)
+            if (changeInfo.url !== 'chrome://newtab/') {
+               return;
+            }
+
             loadAppsPage(newTabId);
-         } else {
-            console.log('Still loading. Tab ID: %s. URL: %s. Status: %s',
-               newTabId,
-               changeInfo.url,
-               changeInfo.status);
-
-            chrome.tabs.onUpdated.removeListener(function() {
-               addHandler();
-            });
-         }
+         });
+      },
+      // Original code
+      Original: function() {
+         chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
+            if (changeInfo.url === 'chrome://newtab/') {
+               loadAppsPage(tabId);
+            }
+         });
       }
-   });
-}
+   };
+}());
 
-NewTabAppsPage.prototype.Original = function original() {
-   chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
-      if (changeInfo.url === 'chrome://newtab/') {
-         me.loadAppsPage(tabId);
-      }
-   });
-}
-
-NewTabAppsPage.prototype.Init = function() {
-   // Handle requests from tabs
-   chrome.extension.onMessage.addListener(
-      function(request, sender, sendResponse) {});
-}
-
-
-var ntap = new NewTabAppsPage();
-ntap.Init();
-ntap.Original();
+NewTabAppsPage.AddHandler();

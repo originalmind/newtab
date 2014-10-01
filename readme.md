@@ -1,20 +1,11 @@
-# Set up environment
+New Tab Apps Page
+=================
 
-1. cinst ruby Compass
-2. npm -g install yo generator-chrome-extension
-3. yo chrome-extension
-4. npm update -g bower
-5. bower install angular angular-route chrome-platform-analytics
+A Google Chrome extension to show the apps page when opening a new tab.
 
-# TODO
+# Installation
 
-1. Make sure it works with multiple windows
-2. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
-Also don't override the tab when the Restore button is present. (post crash)
-3. Incorporate analytics
-4. Fix packaging to include icon
-5. Improve icons
-
+Add extension from https://chrome.google.com/webstore/detail/new-tab-apps-page/fgfnhkkcobfgplgakkclighaejoimhph
 
 # CHANGELOG
 
@@ -28,3 +19,31 @@ v0.0.28
 
 v0.0.10
 * Initial release
+
+**Users can stop reading here**
+
+# TODO
+
+1. Make sure it works with multiple windows
+2. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
+Also don't override the tab when the Restore button is present. (post crash)
+3. Incorporate analytics
+4. Fix packaging to include icon
+5. Improve icons
+
+# Development Environment
+
+## Windows dev environment set up (requires Chocolatey)
+
+1. Powershell: iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+3. cinst nodejs.install ruby Compass Yeoman githubforwindows
+4. npm -g install yo generator-chrome-extension bower
+5. yo chrome-extension
+6. npm update -g bower
+7. bower install angular angular-route chrome-platform-analytics
+
+## To update upstream projects
+
+npm -g update   # updates generators, bower, etc
+npm update      # updates project components (mainly grunt)
+bower update    # updates project front-end components, e.g. angular
