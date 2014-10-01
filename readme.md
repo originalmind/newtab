@@ -1,7 +1,7 @@
-New Tab Apps Page
+New Tab Apps Page - Chrome Extension
 =================
 
-A Google Chrome extension to show the apps page when opening a new tab.
+A Google Chrome extension to show the Apps page when opening a new tab.
 
 # Installation
 
