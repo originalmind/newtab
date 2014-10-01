@@ -49,6 +49,6 @@ Also don't override the tab when the Restore button is present. (post crash)
 
 ## To update upstream projects
 
-npm -g update   # updates generators, bower, etc
-npm update      # updates project components (mainly grunt)
-bower update    # updates project front-end components, e.g. angular
+* npm -g update   # updates generators, bower, etc
+* npm update      # updates project components (mainly grunt)
+* bower update    # updates project front-end components, e.g. angular
