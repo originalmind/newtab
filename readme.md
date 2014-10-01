@@ -29,12 +29,10 @@ v0.0.10
 
 # TODO
 
-1. Make sure it works with multiple windows
-2. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
-Also don't override the tab when the Restore button is present. (post crash)
-3. Incorporate analytics
-4. Fix packaging to include icon
-5. Improve icons
+1. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
+2. If possible, don't override the tab when the Restore button is present. (post crash)
+3. Fix packaging to include icon
+4. Improve icons
 
 # Development Environment
 
