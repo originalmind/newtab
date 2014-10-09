@@ -6,5 +6,9 @@
   "appDescription": {
     "message": "Replaces the Google Chrome™ New Tab Page with the Apps Page.",
     "description": "The description of the application"
+  },
+  "appShortName": {
+      "message": "New Tab Apps",
+      "description": "The application short name"
   }
 }

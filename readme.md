@@ -1,13 +1,18 @@
-New Tab Apps Page - Chrome Extension
+New Tab Apps Page
 =================
 
-A Google Chrome extension to show the Apps page when opening a new tab.
+A Google Chrome extension to show the apps page when opening a new tab.
 
 # Installation
 
 Add extension from https://chrome.google.com/webstore/detail/new-tab-apps-page/fgfnhkkcobfgplgakkclighaejoimhph
 
 # CHANGELOG
+
+v1.0.3
+
+* Updated app icon
+* Add short_name to manifest
 
 v1.0.0
 

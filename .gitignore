@@ -9,3 +9,4 @@ test/bower_components
 package
 *.sublime-workspace
 npm-debug.log
+*.png.old
