@@ -40,10 +40,6 @@ v0.0.10
 # TODO
 
 1. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
-2. If possible, don't override the tab when the Restore button is present. (post crash)
-   + To test a crash: chrome://inducebrowsercrashforrealz
-3. Fix packaging to include icon
-4. Improve icons
 
 # Development Environment
 
