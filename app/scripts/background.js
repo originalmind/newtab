@@ -9,13 +9,16 @@ var NewTabAppsPage = (function() {
       if (!(this instanceof NewTabAppsPage)) {
          return new NewTabAppsPage();
       }
-   };
+   }
+
+   var logEnabled = false;
+   var startingUp = false;
 
    /**
     * Load the Chrome apps page.
     */
    var loadAppsPage = function(tabId) {
-      console.log('Loading apps page');
+      log('Loading apps page');
       chrome.tabs.update(tabId, {
          'url': 'chrome://apps/',
          'active': true,
@@ -23,31 +26,82 @@ var NewTabAppsPage = (function() {
       }, function(tab) {});
    };
 
+   var log = function(message) {
+      if (logEnabled) { console.log(message); }
+   };
+
+   var checkForRestore = function() {
+      chrome.sessions.getRecentlyClosed( null, function(sessions) {
+         log('Recently closed sessions');
+         log(sessions);
+
+         if (sessions) {
+            sessions.forEach(function(session) {
+               // After a crash, the last session seems to have a lastModified value of 0
+               if (session.window && session.lastModified === 0) {
+                  log('Restoring session ' + session.window.sessionId + 
+                     ' with ' + session.window.tabs.length + ' tabs and last modified: ' + session.lastModified);
+                  chrome.sessions.restore(session.window.sessionId);
+               }
+            });
+         }
+      });
+   };
+
    /**
     * Add tab updated handler.
     */
    return {
-      // Experimental code
-      AddHandler: function addHandler() {
+      
+      Init: function() {
+
+         log('Init');
+
+         // chrome.management.onEnabled.addListener(function(extensionInfo) {
+         //    log('Extension enabled');
+         //    log(extensionInfo);
+         // });
+
+         chrome.runtime.onStartup.addListener(function() {
+            log('On startup');
+            startingUp = true;
+         });
+
+         // Fires when recently closed windows/tabs are changed
+         chrome.sessions.onChanged.addListener(function() {
+            log('Session changed');
+
+            checkForRestore();
+            startingUp = false;
+         });
 
          chrome.tabs.onCreated.addListener(function(tab) {
-            console.log('created')
-            console.log(tab);
+            log('Tab created');
+            log(tab);
+
+            if (startingUp) {
+               log('Session changing - won\'t load apps page');
+               return;
+            }
+
             if (tab.url === 'chrome://newtab/') {
                loadAppsPage(tab.id);
             }
          });
 
          chrome.tabs.onUpdated.addListener(function(newTabId, changeInfo, tab) {
-            console.log('updated')
-            console.log(changeInfo)
-            console.log(tab)
+            log('Tab updated');
+            log(changeInfo);
+            log(tab);
 
-            if (changeInfo.url !== 'chrome://newtab/') {
+            if (startingUp) {
+               log('Session changing - won\'t load apps page');
                return;
             }
 
-            loadAppsPage(newTabId);
+            if (changeInfo.url === 'chrome://newtab/') {
+               loadAppsPage(newTabId);
+            }
          });
       },
       // Original code
@@ -61,4 +115,4 @@ var NewTabAppsPage = (function() {
    };
 }());
 
-NewTabAppsPage.AddHandler();
+NewTabAppsPage.Init();
