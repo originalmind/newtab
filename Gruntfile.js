@@ -1,7 +1,7 @@
 /*jshint camelcase: false*/
 // Generated on 2014-02-23 using generator-chrome-extension 0.2.5
 'use strict';
-var mountFolder = function(connect, dir) {
+var mountFolder = function (connect, dir) {
     return connect.static(require('path').resolve(dir));
 };
 
@@ -11,7 +11,7 @@ var mountFolder = function(connect, dir) {
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
             },
             test: {
                 options: {
-                    middleware: function(connect) {
+                    middleware: function (connect) {
                         return [
                             mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'test')
@@ -143,10 +143,10 @@ module.exports = function(grunt) {
         },*/
         uglify: {
             options: {
-              compress: {
-                drop_console: true // <-
-              }
-          }
+                compress: {
+                    drop_console: true // <-
+                }
+            }
         },
         useminPrepare: {
             options: {
@@ -229,14 +229,14 @@ module.exports = function(grunt) {
                         '_locales/{,*/}*.json'
                     ]
                 }, {
-                    expand: true,
-                    cwd: '.tmp/images',
-                    dest: '<%= yeoman.dist %>/images',
-                    src: [
-                        'generated/*'
-                    ]
-                }]
-            }
+                        expand: true,
+                        cwd: '.tmp/images',
+                        dest: '<%= yeoman.dist %>/images',
+                        src: [
+                            'generated/*'
+                        ]
+                    }]
+                }
         },
         concurrent: {
             server: [
@@ -269,19 +269,19 @@ module.exports = function(grunt) {
         },
         bump: {
             options: {
-              files: ['package.json', 'app/manifest.json' ],
-              updateConfigs: [],
-              commit: true,
-              commitMessage: 'Release v%VERSION%',
-              commitFiles: ['package.json', 'manifest.json'],
-              createTag: true,
-              tagName: 'v%VERSION%',
-              tagMessage: 'Version %VERSION%',
-              push: true,
-              pushTo: 'upstream',
-              gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+                files: ['package.json', 'app/manifest.json', 'bower.json'],
+                updateConfigs: [],
+                commit: true,
+                commitMessage: 'Release v%VERSION%',
+                commitFiles: ['package.json', 'manifest.json', 'bower.json'],
+                createTag: true,
+                tagName: 'v%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'upstream',
+                gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
             }
-          },
+        },
         compress: {
             dist: {
                 options: {

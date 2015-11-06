@@ -1,3 +1,4 @@
+/* global chrome */
 'use strict';
 
 /**
@@ -56,11 +57,6 @@ var NewTabAppsPage = (function() {
       Init: function() {
 
          log('Init');
-
-         // chrome.management.onEnabled.addListener(function(extensionInfo) {
-         //    log('Extension enabled');
-         //    log(extensionInfo);
-         // });
 
          chrome.runtime.onStartup.addListener(function() {
             log('On startup');

@@ -9,6 +9,10 @@ Add extension from https://chrome.google.com/webstore/detail/new-tab-apps-page/f
 
 # CHANGELOG
 
+v1.1.x
+
+* Improving crash handling
+
 v1.1.10
 
 * Handle browser crash - automatically restore tabs from crashed session
@@ -35,29 +39,28 @@ v0.0.10
 * Initial release
 
 
-**Users can stop reading here**
-
-# TODO
-
-1. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.
-2. If possible, don't override the tab when the Restore button is present. (post crash)
-   + To test a crash: chrome://inducebrowsercrashforrealz
-3. Fix packaging to include icon
-4. Improve icons
+----------------------------------------------------------------
+**Non-developers can stop reading here**
+----------------------------------------------------------------
 
 # Development Environment
 
 ## Windows dev environment set up (requires Chocolatey)
 
 1. Powershell: iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
-3. cinst nodejs.install ruby Compass Yeoman githubforwindows
+3. cinst nodejs ruby Compass git -y
 4. npm -g install yo generator-chrome-extension bower
 5. yo chrome-extension
 6. npm update -g bower
-7. bower install angular angular-route chrome-platform-analytics
+7. bower install angular angular-route chrome-platform-analytics --save
 
 ## To update upstream projects
 
-* npm -g update   # updates generators, bower, etc
-* npm update      # updates project components (mainly grunt)
-* bower update    # updates project front-end components, e.g. angular
+* npm -g update npm # update npm
+* npm -g update   	# updates Yeoman generators, bower, etc
+* npm update      	# updates project components (mainly grunt)
+* bower update    	# updates project front-end components, e.g. angular
+
+# TODO
+
+1. Use events to make sure if the user has already typed something, that the apps page load is cancelled. This happens when the PC is under load.

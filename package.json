@@ -1,10 +1,15 @@
 {
   "name": "newtab",
   "description": "New Tab Apps Page: a Google Chrome extension to show the apps page when opening a new tab.",
-  "version": "1.0.0",
+  "version": "1.1.11",
   "author": {
     "name": "Joe Niland",
-    "email": "joe@originalmind.com.au"
+    "email": "joe@originalmind.com.au",
+    "url": "http://omnd.co/joe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/originalmind/newtab.git"
   },
   "license": "MIT",
   "keywords": [

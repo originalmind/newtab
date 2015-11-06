@@ -10,3 +10,4 @@ package
 *.sublime-workspace
 npm-debug.log
 *.png.old
+*~
